@@ -1,0 +1,13 @@
+Source: dracula-gtk
+Section: x11
+Priority: optional
+Maintainer: Ken Gilmer <kgilmer@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://github.com/dracula/gtk
+
+Package: dracula-gtk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dracula Theme for GTK
+ Dark theme for GTK and 117+ apps.
