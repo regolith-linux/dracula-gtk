@@ -1,3 +1,10 @@
+dracula-gtk (1.0-2) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove unnecessary files
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 26 Aug 2020 20:37:28 -0700
+
 dracula-gtk (1.0-1) bionic; urgency=medium
 
   * [ Ken Gilmer ]
