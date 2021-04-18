@@ -1,3 +1,10 @@
+dracula-gtk (1.1.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add icons to dracula theme
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 18 Apr 2021 16:29:19 -0700
+
 dracula-gtk (1.0.1-1) bionic; urgency=medium
 
   [ Ken Gilmer ]

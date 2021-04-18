@@ -11,3 +11,8 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Dracula Theme for GTK
  Dark theme for GTK and 117+ apps.
+
+Package: dracula-icon-theme
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Icons for Dracula Theme
