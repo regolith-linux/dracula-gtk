@@ -1,3 +1,19 @@
+dracula-gtk (1.1.2) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add build automation
+
+  [ Khosrow Moossavi ]
+  * chore: remove obsolete package broadcast action
+  * feat: enable github action to test pull requests
+  * feat: enable github action to publish to unstable
+  * feat: enable github action to publish to testing
+  * feat: enable github action to prepare release
+  * chore: use regolith-ci-bot user and token
+  * fix: create release tag from correct git sha
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 03 Feb 2025 20:39:59 +0000
+
 dracula-gtk (1.1.1) focal; urgency=medium
 
   [ Ken Gilmer ]
