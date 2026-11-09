@@ -32,36 +32,38 @@ headerbar {
 
   %linked-header {
     border: none;
-    border-radius: 0;
+    border-radius: 7px;
     border-right-style: none;
     box-shadow: none;
 
-    &:first-child {
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
+    // &:first-child {
+    //   border-top-left-radius: 7px;
+    //   border-bottom-left-radius: 0px;
+    // }
 
-    &:last-child {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-right-style: solid;
-    }
+    // &:last-child {
+    //   border-top-right-radius: 0px;
+    //   border-bottom-right-radius: 0px;
+    //   border-right-style: solid;
+    // }
 
-    &:only-child {
-      border-radius: 0px;
-      border-style: solid;
-    }
+    // &:only-child {
+    //   border-radius: 0px;
+    //   border-style: solid;
+    // }
   }
   entry { min-height: 24px; }
   button {
     @include button(normal-header);
-    min-height: 34px;
+    min-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     &:hover {
       @include button(hover-header, transparent, $purple);
     }
     &:active,
     &:checked {
-      @include button(active-header, transparent, $purple);
+      @include button(active-header, red, $purple);
     }
 
     &:backdrop,
@@ -138,6 +140,10 @@ headerbar {
         color: $backdrop_selected_bg_color;
       }
     }
+  }
+
+  .linked:not(.vertical) > entry + button{ 
+    border-radius: 0 3px 3px 0px;
   }
   // End reset style
 
@@ -274,6 +280,18 @@ headerbar {
     margin-bottom: 10px;
   }
   separator { background: transparent; }
+
+  viewswitcher, switcher {
+    > box.horizontal {
+      > button.radio {
+        image { margin-left: 7px; }
+        label { margin-right: 7px; }
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+  } 
 }
 
 .background:not(.tiled):not(.maximized) .titlebar {
@@ -306,7 +324,9 @@ headerbar {
   }
 
   > separator {
-    background: transparent;
+    &, &:backdrop {
+      background: $headerbar_color;
+    }
   }
 
   @extend %titlebar;

@@ -66,11 +66,11 @@ $icon_shadow_color: $text_shadow_color;
 $drop_target_color: $lime;
 
 // Infobar colors
-$info_color: $lime;
+$info_color: transparentize($lime, 0.15);
 $question_color: $cyan;
 
 // Panel colors
-$panel_bg_color: transparentize(rgb(30, 31, 41), 0.3);
+$panel_bg_color: rgb(30, 31, 41);
 $panel_fg_color: white;
 $panel_borders_color: transparentize(rgb(30, 31, 41), 0.8);
 

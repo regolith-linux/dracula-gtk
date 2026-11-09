@@ -11,6 +11,8 @@
     text-shadow: none;
     -gtk-icon-shadow: none;
   }
+
+  &.chromium { background-color: lighten($base_color, 3%); }
 }
 
 /*
@@ -19,6 +21,11 @@
    or better, just don't.
    Everytime a wildcard is used a kitten dies, painfully.
 */
+
+selection {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+}
 
 *:disabled { -gtk-icon-effect: dim; }
 
@@ -82,7 +89,7 @@ iconview { @extend .view; }
 .rubberband,
 rubberband {
   border: 1px solid darken($selected_bg_color, 10%);
-  background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
+  background-color: transparentize(darken($selected_bg_color, 10%), 0.3);
 }
 
 flowbox {
